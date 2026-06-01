@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>E_Commerce_API</RootNamespace>
+  </PropertyGroup>
+
+	<ItemGroup>
+        <PackageReference Include = "FluentValidation.AspNetCore" Version = "11.3.1" />
+        <PackageReference Include = "FluentValidation.DependencyInjectionExtensions" Version = "12.1.1" />
+        <PackageReference Include = "Microsoft.AspNetCore.Authentication.JwtBearer" Version = "8.0.0" />
+       <PackageReference Include = "Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version = "8.0.0" />
+       <PackageReference Include = "Microsoft.EntityFrameworkCore.Design" Version = "8.0.0" >
+         <PrivateAssets> all </PrivateAssets>
+	    <IncludeAssets> runtime; build; native; contentfiles; analyzers; buildtransitive </IncludeAssets>
+	    </PackageReference>
+	    <PackageReference Include = "Microsoft.EntityFrameworkCore.SqlServer" Version = "8.0.0" />
+       <PackageReference Include = "Microsoft.EntityFrameworkCore.Tools" Version = "8.0.0" >
+         <PrivateAssets> all </PrivateAssets>
+	    <IncludeAssets> runtime; build; native; contentfiles; analyzers; buildtransitive </IncludeAssets>
+	    </PackageReference>
+
+	    <PackageReference Include = "AutoMapper" Version = "16.0.0" />
+
+
+
+
+         <PackageReference Include = "Microsoft.Extensions.Caching.Hybrid" Version = "10.6.0" />
+       <PackageReference Include = "Mscc.GenerativeAI" Version = "3.1.0" />
+       <PackageReference Include = "Serilog.AspNetCore" Version = "10.0.0" />
+       <PackageReference Include = "Serilog.Enrichers.Environment" Version = "3.0.1" />
+       <PackageReference Include = "Serilog.Enrichers.OpenTelemetry" Version = "1.0.1" />
+       <PackageReference Include = "Serilog.Enrichers.Thread" Version = "4.0.0" />
+       <PackageReference Include = "Swashbuckle.AspNetCore" Version = "6.6.2" />
+       <PackageReference Include = "System.IdentityModel.Tokens.Jwt" Version = "7.0.3" />
+ </ItemGroup>
+
+	<ItemGroup>
+    <Folder Include="Logs\" />
+    <Folder Include="wwwroot\images\" />
+  </ItemGroup>
+
+</Project>
